@@ -1,0 +1,30 @@
+!!!
+%html
+  %head
+    %title= current_page.data.title || "Cours et concours"
+    %meta{charset: "utf-8"}/
+    %link{href: "img/favicon.ico", rel: "icon", type: "image/x-icon"}/
+    %link{href: "img/favicon.ico", rel: "shortcut icon", type: "image/x-icon"}/
+    %meta{content: "Your description", name: "description"}/
+    %meta{content: "Your keywords", name: "keywords"}/
+    %meta{content: "Your name", name: "author"}/
+    / Always force latest IE rendering engine or request Chrome Frame
+    %meta{content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    / Use title if it's in the page YAML frontmatter
+    %title= current_page.data.title || "The Middleman"
+    = stylesheet_link_tag "normalize", "all"
+    = javascript_include_tag  "all"
+    %link{href:"http://fonts.googleapis.com/css?family=Open+Sans:400,300", rel:"stylesheet", type:'text/css'}
+    :javascript
+      if($(window).width()>1024){document.write("<"+"script src='javascripts/jquery.preloader.js'></"+"script>");}
+    :javascript
+      jQuery(window).load(function() {
+           $x = $(window).width();
+        if($x > 1024)
+        { jQuery("#content .row").preloader();    }
+
+           jQuery('.magnifier').touchTouch();
+          jQuery('.spinner').animate({'opacity':0},1000,'easeOutCubic',function (){jQuery(this).css('display','none')});
+              });
+  %body{class: page_classes}
+    = yield

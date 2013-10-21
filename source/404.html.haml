@@ -1,0 +1,40 @@
+---
+title: Cours et concours
+---
+
+.spinner
+/ ============================== header =================================
+= partial "layouts/navigation"
+
+.bg-content
+  / ============================== content =================================
+  #content
+    .container
+      .row
+        .span12
+          .block-404
+            %img.img-404{alt: "", src: "img/slide-1.jpg"}/
+            .box-404
+              %h2 Sorry!
+              %h3 404 page not found
+              %p Nam liber tempor cum soluta nobis eleifend option congue nihil doming id quod mazim placerat facer possim assum orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy euismod.
+              %form#form-search{"accept-charset" => "utf-8", action: "search.php", method: "GET"}
+                .clearfix
+                  %input{name: "s", onblur: "if(this.value=='') this.value=''", onfocus: "if(this.value =='' ) this.value=''", type: "text"}/
+                  %a.btn.btn-1{href: "#", onclick: "document.getElementById('form-search').submit()"} Search
+/ ============================== footer =================================
+%footer
+  .container.clearfix
+    %ul.list-social.pull-right
+      %li
+        %a.icon-1{href: "#"}
+      %li
+        %a.icon-2{href: "#"}
+      %li
+        %a.icon-3{href: "#"}
+      %li
+        %a.icon-4{href: "#"}
+    .privacy.pull-left
+      Website Template designed by
+      %a{href: "http://www.templatemonster.com/", rel: "nofollow", target: "_blank"} TemplateMonster.com
+%script{src: "js/bootstrap.js", type: "text/javascript"}

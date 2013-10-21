@@ -1,0 +1,97 @@
+---
+title: Cours et concours
+---
+
+.spinner
+/ ============================== header =================================
+= partial "layouts/navigation"
+
+.bg-content
+  / ============================== content =================================
+  #content
+    .ic More Website Templates @ TemplateMonster.com. November19, 2012!
+    .container
+      .row
+        %article.span8
+          .inner-1
+            %ul.list-blog
+              %li
+                %h3 Duis autem vel eum iriure dolor
+                %time.date-1{datetime: "2012-11-09"} 9.11.2012
+                .name-author
+                  by
+                  %a{href: "#"} Admin
+                %a.comments{href: "#"} 11 comments
+                .clear
+                %img{alt: "", src: "images/page4-img1.jpg"}/
+                %p Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum delenit augue duis dolore te feugait nulla facilisi.
+                %a.btn.btn-1{href: "#"} Read More
+              %li
+                %h3 Hendrerit in vulputate velit esse molestie
+                %time.date-1{datetime: "2012-11-08"} 8.11.2012
+                .name-author
+                  by
+                  %a{href: "#"} Admin
+                %a.comments{href: "#"} 9 comments
+                .clear
+                %img{alt: "", src: "images/page4-img2.jpg"}/
+                %p Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum delenit augue duis dolore te feugait nulla facilisi.
+                %a.btn.btn-1{href: "#"} Read More
+        %article.span4
+          %h3.extra Search
+          %form#search{"accept-charset" => "utf-8", action: "search.php", method: "GET"}
+            .clearfix
+              %input{name: "s", onblur: "if(this.value=='') this.value=''", onfocus: "if(this.value =='' ) this.value=''", type: "text"}/
+              %a.btn.btn-1{href: "#", onclick: "document.getElementById('search').submit()"} Search
+          %h3 Categories
+          %ul.list.extra.extra1
+            %li
+              %a{href: "#"} Ut wisi enim ad minim veniam
+            %li
+              %a{href: "#"} Quis nostrud exerci tation ullamcorper
+            %li
+              %a{href: "#"} Suscipit lobortis nisl ut aliquip
+            %li
+              %a{href: "#"} Commodo consequat
+            %li
+              %a{href: "#"} Duis autem vel eum iriure dolor in hendrerit
+            %li
+              %a{href: "#"} Vulputate velit esse molestie consequat
+            %li
+              %a{href: "#"} Fel illum dolore eu feugiat nulla
+            %li
+              %a{href: "#"} Facilisis at vero eros et accumsan iusto
+            %li
+              %a{href: "#"} Odio dignissim qui blandit
+            %li
+              %a{href: "#"} Praesent luptatum zzril delenit augue
+          %h3 Archive
+          .wrapper
+            %ul.list.extra2.list-pad
+              %li
+                %a{href: "#"} November 2012
+              %li
+                %a{href: "#"} October 2012
+              %li
+                %a{href: "#"} September 2012
+              %li
+                %a{href: "#"} August 2012
+              %li
+                %a{href: "#"} July 2012
+              %li
+                %a{href: "#"} June 2012
+            %ul.list.extra2
+              %li
+                %a{href: "#"} May 2012
+              %li
+                %a{href: "#"} April 2012
+              %li
+                %a{href: "#"} March 2012
+              %li
+                %a{href: "#"} February 2012
+              %li
+                %a{href: "#"} January 2012
+              %li
+                %a{href: "#"} December 2011
+/ ============================== footer =================================
+= partial "layouts/footer"

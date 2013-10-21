@@ -1,0 +1,31 @@
+%header
+  .container.clearfix
+    .row
+      .span12
+        .navbar.navbar_
+          .container
+            %h1.brand.brand_
+              %a{href: "index.html"}
+                =tag :img, :src => "images/logo.gif"
+            %a.btn.btn-navbar.btn-navbar_{"data-target" => ".nav-collapse_", "data-toggle" => "collapse"}
+              Menu
+              %span.icon-bar
+            .nav-collapse.nav-collapse_.collapse
+              %ul.nav.sf-menu
+                %li.active
+                  %a{href: "index.html"} About
+                %li.sub-menu
+                  %a{href: "index-1.html"} Services
+                  %ul
+                    %li
+                      %a{href: "#"} Dolore
+                    %li
+                      %a{href: "#"} Consecte
+                    %li
+                      %a{href: "#"} Conseq
+                %li
+                  %a{href: "index-2.html"} Folio
+                %li
+                  %a{href: "index-3.html"} Blog
+                %li
+                  %a{href: "index-4.html"} Contact
