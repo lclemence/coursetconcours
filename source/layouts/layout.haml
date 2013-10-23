@@ -15,16 +15,5 @@
     = stylesheet_link_tag "normalize", "all"
     = javascript_include_tag  "all"
     %link{href:"http://fonts.googleapis.com/css?family=Open+Sans:400,300", rel:"stylesheet", type:'text/css'}
-    :javascript
-      if($(window).width()>1024){document.write("<"+"script src='javascripts/jquery.preloader.js'></"+"script>");}
-    :javascript
-      jQuery(window).load(function() {
-           $x = $(window).width();
-        if($x > 1024)
-        { jQuery("#content .row").preloader();    }
-
-           jQuery('.magnifier').touchTouch();
-          jQuery('.spinner').animate({'opacity':0},1000,'easeOutCubic',function (){jQuery(this).css('display','none')});
-              });
   %body{class: page_classes}
     = yield
