@@ -1,0 +1,38 @@
+---
+title: Cours et concours
+---
+
+/ ============================== header =================================
+= partial "layouts/navigation"
+
+.bg-content
+  / ============================== content =================================
+  #content
+    .container
+      .row
+        %article.span4
+          %h3 Contact
+          .map
+            %iframe{src: "https://maps.google.fr/maps?q=50.108497,1.833941&num=1&gl=fr&t=m&z=16&output=embed"}
+          %address.address-1
+            %strong
+              Cours et concours
+              %br/
+              1 place clemenceau
+              %br/
+              80100 Abbeville
+            .overflow
+              %span> Telephone:
+              +1 800 559 6580
+              %br/
+              = succeed "+1" do
+                %span FAX:
+              %br/
+              %span> Facebook:
+              %a.mail-1{href: "https://www.facebook.com/cours.ado.abbeville"} https://www.facebook.com/cours.ado.abbeville
+              %br/
+              %span E-mail:
+              %a.mail-1{href: "mailto:plelong@coursetconcours.com"} plelong@coursetconcours.com
+              %br/
+/ ============================== footer =================================
+= partial "layouts/footer"
