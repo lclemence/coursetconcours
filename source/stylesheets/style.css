@@ -12,6 +12,11 @@ a[href^="tel:"] {
   margin: 0px 30px 0 0;
   float: left;
 }
+.img-page{
+   float: left;
+   margin-bottom: 20px;
+   margin-right: 20px;
+}
 .img-indent1 {
   margin: 1px 29px 16px 0;
   float: left;
@@ -565,8 +570,11 @@ p {
 /***** map *****/
 .map {
   margin: 0 0 25px;
+  margin-right: 25px;
   padding-top: 10px;
   line-height: 0;
+  float:left;
+
 }
 .map iframe {
   border: none;
